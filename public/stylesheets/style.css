@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  color: #00B7FF;
+}
+#search-area{
+  width: 100vw;
+  height: 100vh;
+  border: 2px solid black;
+}
+#food{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ee6e73;
+  border-bottom: 2px solid black;
+}
+form{
+  width: 90%;
+  height: auto;
+}
+input[type=search] {
+	padding: 1rem;            /* Overridden by padding: 1px; */
+	font-family: Georgia;     /* Overridden by font: -webkit-small-control; */
+	border: 1px solid black;  /* Overridden by border: 2px inset; */
+	background: white;         /* Overridden by background-color: white; */
+  border-radius: 14px;
+}
+.cf:before, .cf:after{
+  content:"";
+  display:table;
+}
+.cf:after{
+  clear:both;
+}
+.cf{
+  zoom:1;
+}
+.form-wrapper {
+  padding: 2rem;
+  background: url('/images/wood.jpeg');
+  background-size: auto;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 3px 3px rgba(0,0,0,.4) inset, 0 3px 0 rgba(255,255,255,.2);
+  -webkit-box-shadow: 0 3px 3px rgba(0,0,0,.4) inset, 0 3px 0 rgba(255,255,255,.2);
+  box-shadow: 0 3px 3px rgba(0,0,0,.4) inset, 0 3px 0 rgba(255,255,255,.2);
+}
+.form-wrapper input {
+  width: 85%;
+  height: 2.5rem;
+  padding: 10px 15px;
+  float: left;
+  font: 23px 'lucida sans', 'trebuchet MS', 'Tahoma';
+  border: 0;
+  background: #eee;
+  -moz-border-radius: 8px 0 0 8px;
+  -webkit-border-radius: 8px 0 0 8px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid black;
+
+}
+.form-wrapper input:focus {
+  outline: 0;
+  background: #fff;
+  -moz-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+  -webkit-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+  box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+.form-wrapper input::-webkit-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+.form-wrapper input:-moz-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+.form-wrapper input:-ms-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+.form-wrapper button {
+	overflow: visible;
+  position: relative;
+  float: right;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 15%;
+  font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+  color: #fff;
+  text-transform: uppercase;
+  background: #ee6e73;
+  -moz-border-radius: 0 8px 8px 0;
+  -webkit-border-radius: 0 8px 8px 0;
+  border-radius: 0 8px 8px 0;
+  letter-spacing: 5px;
+}
+.form-wrapper button:hover{
+  background: #e54040;
+}
+.form-wrapper button:active,
+.form-wrapper button:focus{
+  background: #c42f2f;
+}
+.form-wrapper button:before {
+  content: '';
+  position: absolute;
+  border-width: 8px 8px 8px 0;
+  border-style: solid solid solid none;
+  border-color: transparent #ee6e73 transparent;
+  top: 12px;
+  left: -6px;
+}
+.form-wrapper button:hover:before{
+  border-right-color: #e54040;
+}
+.form-wrapper button:focus:before{
+  border-right-color: #c42f2f;
+}
+.form-wrapper button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+#foodItems {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap;
+  /*margin-top: 5rem;*/
+  padding-left: 1rem;
+  background: rgba(30, 30, 30, 0.3);
+  height: 100%;
+}
+.food-container {
+  width: 32%;
+  padding: 1.5rem;
+  margin: .2rem;
+  border: .5px solid black;
+}
+.linkLogo {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  color: red;
+}
+.logo {
+  width: 50%;
+  align-self: flex-end;
+}
+.link {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+.price-locale {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
